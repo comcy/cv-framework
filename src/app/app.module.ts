@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 import { FwModule } from 'fw/fw.module';
 
 import { AppComponent } from './app.component';
+import { HeaderService } from "app/services/header.service";
+import { HeaderApi } from "fw/header/header.api";
 
 @NgModule({
   declarations: [
@@ -17,7 +19,10 @@ import { AppComponent } from './app.component';
     HttpModule,
     FwModule
   ],
-  providers: [],
+  providers: [
+    HeaderService,
+    { provide: HeaderApi, useExisting: HeaderService },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

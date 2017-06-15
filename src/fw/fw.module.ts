@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { FwBodyComponent } from 'fw/body/body.component';
 
-import { FwContainerHeaderComponent } from 'fw/container/header/header.component';
+import { FwContainerHeaderComponent } from 'fw/header/header.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { FwContainerHeaderComponent } from 'fw/container/header/header.component
   providers: [],
   exports: [
       FwBodyComponent,
-      FwContainerHeaderComponent
+      FwContainerHeaderComponent,
   ]
 })
 export class FwModule { }
