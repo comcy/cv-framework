@@ -1,16 +1,15 @@
 import { Injectable } from '@angular/core';
 
 import { Observable } from 'rxjs/Rx';
-import { HeaderApi } from 'fw/header/header.api';
+import { HeaderConfigApi } from 'fw/header/headerconfig-api';
 
 // Test strings
-let name: string = "Christian Silfang";
-let greeting: string = "Hallo,ich bin cool";
+let name: string = "Max Mustermann, M. Sc.";
+let greeting: string = "Herzlich willkommen. Mein Name ist Max Mustermann, mit dieser Seite präsentiere ich meine Vita.";
 let picture: string = "no_avatar.jpg";
 
-
 @Injectable()
-export class HeaderService implements HeaderApi {
+export class HeaderConfigService implements HeaderConfigApi {
 
   constructor() {  }
 

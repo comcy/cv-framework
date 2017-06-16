@@ -16,7 +16,7 @@
 }
 
 p {
-    font-size:12pt;
+   font-size:12pt;
 }
 
 body {
@@ -67,10 +67,13 @@ div {
 			}
 
 			ul {
-			    list-style-type: none;
+				overflow: hidden;
+				list-style-type: none;
 			}
-
-
+			
+			// li {
+			// 	// width: 1000px;
+			// }
 			// /* Projects definitons */
 			// #project img {
 			// 	width: 20%;
