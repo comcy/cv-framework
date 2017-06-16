@@ -8,7 +8,7 @@ let title: string = "Kontakt";
 let contactList: Array<ContactElement> = [
     {
         icon: "call",
-        contactText: "(+49) 1575 176 5444"
+        contactText: "(+49) 000 1111 22222"
     },
     {
         icon: "mail",
