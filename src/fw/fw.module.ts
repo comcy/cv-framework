@@ -8,13 +8,17 @@ import { FwBodyComponent } from 'fw/body/body.component';
 
 import { FwContainerHeaderComponent } from 'fw/header/header.component';
 import { FwContainerContactComponent } from "fw/contact/contact.component";
+import { FwContainerPracticeComponent } from "fw/practice/practice.component";
+import { FwContainerQualificationComponent } from "fw/qualification/qualification.component";
 
 
 @NgModule({
   declarations: [
     FwBodyComponent,
     FwContainerHeaderComponent,
-    FwContainerContactComponent
+    FwContainerContactComponent,
+    FwContainerPracticeComponent,
+    FwContainerQualificationComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +30,9 @@ import { FwContainerContactComponent } from "fw/contact/contact.component";
   exports: [
       FwBodyComponent,
       FwContainerHeaderComponent,
-      FwContainerContactComponent
+      FwContainerContactComponent,
+      FwContainerPracticeComponent,
+      FwContainerQualificationComponent
   ]
 })
 export class FwModule { }
