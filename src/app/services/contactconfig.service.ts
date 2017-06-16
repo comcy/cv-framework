@@ -3,8 +3,10 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 import { ContactConfigApi, ContactElement } from 'fw/contact/contactconfig-api';
 
-// Test strings
+// Set title.
 let title: string = "Kontakt";
+
+// Set contact info attributes as list.
 let contactList: Array<ContactElement> = [
     {
         icon: "call",
